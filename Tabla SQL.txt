@@ -1,0 +1,34 @@
+Create Database CompeticionPremium
+
+Use CompeticionPremium
+
+Create Table Usuarios
+(
+IdUsuario int not null Identity(1,1) Primary Key,
+Usuario nvarchar(50),
+Contrasenia nvarchar(50),
+BajaLogica bit,
+)
+
+Create Table Equipos
+(
+IdEquipo int not null Identity(1,1) Primary Key,
+IdUsuario int,
+NombreEquipo nvarchar(70),
+CantIntegrantes int,
+BajaLogica bit,
+
+Constraint FK_Equipos_IdUsuario Foreign Key(IdUsuario) references Usuarios(IdUsuario),
+)
+
+Create Table Integrantes
+(
+IdIntegrantes int not null Identity(1,1) Primary Key,
+IdEquipo int,
+Nombre nvarchar(50),
+Apellido nvarchar(50),
+DNI int,
+BajaLogica bit,
+
+Constraint FK_DetalleVentas_IdEquipo Foreign Key(IdEquipo) references Equipos(IdEquipo),
+)

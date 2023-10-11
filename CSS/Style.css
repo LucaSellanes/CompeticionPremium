@@ -1,0 +1,234 @@
+.Navegador
+{
+background-image: url(/HTML/Images/Banner\ Futbol.jpg);
+background-repeat: no-repeat;
+background-size: 100% auto; /*Auto ajusta el porcentaje, al total del Nav.Contain se ajusta al contenedor padre*/
+background-position: center;
+display: flex; /* Usa Flexbox para centrar horizontal y verticalmente */
+justify-content:flex-start; /* Centra horizontalmente */
+align-items:center; /* Centra verticalmente */
+height: 400px; /*Permite regular la altura*/
+font-size: 30px;
+font-weight: bold;
+}
+
+.Navegador ul
+{
+  list-style-type: none; /* Elimina los puntos de lista predeterminados */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Utiliza Flexbox para crear espacio entre elementos */
+  gap: 50px; /* Ajusta el espacio horizontal entre elementos <a> */
+  margin-left: 20px;
+}
+
+
+.Navegador a
+{
+  text-decoration: none; /*Elimina el subrayado de los links*/
+  color: #000; /* Cambia el color del texto según tus preferencias */
+}
+
+.Sesion
+{
+align-items: center;
+justify-content: flex-end;
+display: flex; 
+margin-right: 25px;
+margin-top: 15px;
+}
+
+
+
+.carousel-item img {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 800px; /* Ajusta el valor según el tamaño deseado */
+  height: 800px; /* Ajusta el valor según el tamaño deseado */
+  object-fit: cover; /* Controla cómo se ajusta la imagen dentro del contenedor */
+}
+
+.Torneos p1   
+{
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-family:monospace;
+  font-weight: bold;
+  justify-content:center; /* Centra horizontalmente */
+  align-items:center; /* Centra verticalmente */
+  display: flex; /* Usa Flexbox para centrar horizontal y verticalmente */
+}
+.Tarjetas 
+{
+margin-bottom: 40px;
+margin-left:60px;
+margin-right: 60px;
+display:flex; /* Usa Flexbox para centrar horizontal y verticalmente */
+justify-content:space-between; /* Centra horizontalmente */
+align-items:center; /* Centra verticalmente */
+position: relative; /* Añade posicionamiento relativo al contenedor de la tarjeta */
+}
+
+.card-img-top {
+  height: 300px; /* Establece la altura deseada para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin distorsionarla */
+}
+
+.card-body {
+  /* Puedes ajustar el padding según tus preferencias para dejar espacio para el botón */
+  padding-bottom: 50px; /* Ajusta según sea necesario para acomodar el botón */
+}
+
+.btn-primary {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición vertical del botón */
+  right: 115px; /* Ajusta la posición horizontal del botón */
+}
+
+.Nosotros p1
+{
+font-size: 50px;
+font-family:monospace;
+font-weight: bold;
+justify-content:center; /* Centra horizontalmente */
+align-items:center; /* Centra verticalmente */
+display: flex; /* Usa Flexbox para centrar horizontal y verticalmente */
+}
+
+.Nosotros p
+{
+  font-size: 22px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.Nosotros
+{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.TextoNosotros
+{
+width: 60%; /* Ajusta el ancho de la columna del mapa según sea necesario */
+}
+
+.Mapa
+{  
+right: 0; /* Fija el mapa en el margen derecho */
+width: 40%; /* Ajusta el ancho de la columna del mapa según sea necesario */
+}
+
+.Reglamentos
+{
+  background-repeat: no-repeat;
+  background-size: 100% auto; /*Auto ajusta el porcentaje, al total del Nav.Contain se ajusta al contenedor padre*/
+  background-position: center;
+  background-image: url(/HTML/Images/Cancha\ de\ Futbol.jpg);
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir el div */
+}
+
+.Reglamentos p1
+{
+  font-weight: bold;
+  line-height: 1; /* Reduce el interlineado al mínimo, equivalente a 1 */ 
+  font-size: 50px;
+  font-family:monospace;
+  font-weight: bold;
+}
+
+.Reglamentos p
+{
+  line-height: 1; /* Reduce el interlineado al mínimo, equivalente a 1 */ 
+  font-size: 25px;
+  font-family:monospace;
+}
+
+.Reglamentos p2
+{
+  line-height: 1; /* Reduce el interlineado al mínimo, equivalente a 1 */ 
+  font-size: 35px;
+  font-family:monospace;
+}
+
+.Num
+{
+   font-weight: bold;
+}
+
+.Contacto p1
+{
+  font-weight: bold;
+  font-size: 50px;
+  font-family:monospace;
+}
+
+.PiePagina
+{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.PiePagina p
+{
+text-decoration: underline;
+font-size: 25px;
+font-family:monospace;
+font-weight: bold;
+}
+
+.PiePagina img
+{
+height: 50px;
+width: 50px;
+}
+
+.InicioSesion p1
+{
+text-align: center;
+font-size: 40px;
+font-family:monospace;
+font-weight: bold;
+}
+
+.InicioSesion label
+{
+margin-top: 20px;
+font-size: 20px;
+}
+
+.InicioSesion 
+{
+margin-top: 250px;
+margin-left: 700px;
+background-image: url(/HTML/Images/Fondo\ Inicio\ Sesion.jpg);
+background-size: cover; /* La imagen se ajustará automáticamente al tamaño del contenedor sin distorsionarla */
+background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que el contenedor */
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 500px;
+width: 500px;
+}
+
+.BotonIngresar
+{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente en el eje principal */
+  align-items: center; /* Centrar verticalmente en el eje secundario */
+}
+
+.FormSesion 
+{
+font-weight: bold;
+width: 100%;
+width: 400px;
+}
